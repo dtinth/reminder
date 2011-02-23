@@ -48,6 +48,7 @@ t.onblur = function() {
 function setText(v) {
 	t.value = v;
 	p.textContent = v;
+	delete localStorage.reminderText;
 	localStorage.reminderText = v;
 }
 </script>
